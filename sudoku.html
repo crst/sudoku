@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sudoku</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/lib/jquery/jquery-1.8.2.min.js" type="text/javascript"></script>
+
+    <script src="js/UI.js" type="text/javascript"></script>
+    <script src="js/Reduction.js" type="text/javascript"></script>
+    <script src="js/DLX.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+   <div id="main-container">
+
+     <div id="sudoku-container">
+       <p>
+         <a id="dec-n" href="javascript:void(0);">[-]</a>
+         <span id="size"></span>
+         <a id="inc-n" href="javascript:void(0);">[+]</a>
+       </p>
+       <p class="autosolve">
+         Autosolve:
+         <input type="checkbox" id="auto_solve" value="auto_solve" checked="checked">
+       </p>
+
+       <form id="input-form">
+       </form>
+
+       <p>
+         <input type="button" id="solve-button" value="Solve">
+         <input type="button" id="reset-button" value="Reset">
+       </p>
+
+       <div id="error"></div>
+       <div id="status"></div>       
+     </div>
+
+     <div id="help">
+       The JavaScript running on this page tries to find a solution
+       for an initially empty Sudoku. You can then enter numbers from
+       the displayed range for some fields of the matrix, that will be
+       treated as constraints for the solving
+       algorithm. If <i>Autosolve</i> is active, a new solution will
+       be calculated each time a number is entered, otherwise a
+       solution will only be calculated when the <i>Solve</i> button
+       is clicked.
+
+       <p>Depending on the given constraints there may be many
+         solutions for the Sudoku, but only the first one found will
+         be shown. If no solution exists because the entered numbers
+         render the Sudoku unsolvable, a corresponding message is
+         shown instead.</p>
+
+       <p>Maximum size for the Sudoku field is 36x36. Running the
+         solving algorithm for a 36x36 field however may already leave
+         the page unresponsive for quite some time.</p>
+     </div>
+
+   </div>
+
+  </body>
+</html>
+

@@ -1,0 +1,121 @@
+body {
+    background: #333333;
+    font-family: sans-serif;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: none;
+}
+
+#main-container {
+    margin: 0 auto 0 auto;
+    display: table;
+}
+
+#sudoku-container {
+    float: left;
+    margin: 1em 1em 0 auto;
+    background: #fafafa;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px #c0c0c0;
+}
+
+
+/* Sudoku matrices */
+
+#input-form table {
+    margin: 0 auto 0 auto;
+    border-collapse: collapse;
+}
+
+.inp {
+    background: #fefefe;
+
+    width: 1.5em;
+    height: 1.5em;
+
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    
+    border: thin solid #333333;
+}
+
+:-moz-placeholder {
+    color: #c0c0c0;
+}
+
+:-webkit-input-placeholder {
+    color: #c0c0c0;
+}
+
+:-ms-input-placeholder {
+    color: #c0c0c0;
+}
+
+.border-top {
+    margin-top: .5em;
+}
+
+.border-left {
+    margin-left: .5em;
+}
+
+
+/* Buttons */
+
+#solve-button,
+#reset-button {
+    background: #f0f8ff;
+    font-weight: bold;
+    border: #000000 solid thin;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px #c0c0c0;
+}
+
+#solve-button:active,
+#reset-button:active {
+    box-shadow: 0px 0px 0px 0px #ffffff;
+}
+
+
+/* Text output */
+
+#status {
+    position: relative;
+    height: 1em;
+    color: #a9a9a9;
+    font-family: serif;
+    font-size: 7pt;
+    font-style: italic;
+    padding-top: 1em;
+}
+
+#error {
+    color: #ff0000;
+    height: 1em;
+    font-weight: bold;
+}
+
+#help {
+    float: left;
+    margin: 1em auto 0 auto;
+    background: #fafafa;
+    width: 600px;
+    padding: 1em;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px #c0c0c0;
+}
