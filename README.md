@@ -1,1 +1,1 @@
-http://crst.github.com/sudoku/sudoku.html
+https://crst.github.io/sudoku/sudoku.html
